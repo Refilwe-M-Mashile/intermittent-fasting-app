@@ -1,14 +1,12 @@
 import { Landing } from "./landing/Landing";
+import { Nav } from "./nav/Nav";
 
 import "./App.css";
 
 function App() {
   return (
     <>
-      <h1>
-        Intermittent Fasting <span className="sixteen">16</span> |{" "}
-        <span className="eight">8</span>
-      </h1>
+      <Nav />
       <Landing />
     </>
   );

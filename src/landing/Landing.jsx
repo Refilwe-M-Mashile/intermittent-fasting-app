@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./Landing.css";
 
 export const Landing = () => {
   const [status, setStatus] = useState("fasting");
@@ -35,12 +36,13 @@ export const Landing = () => {
 
   return (
     <main>
-      <h2>{status}</h2>
-      <h2>{time}</h2>
-      <h4>
-        Hours Left Till Switch:
-        {hoursToGo}
-      </h4>
+      <h1>{status}</h1>
+      <br />
+
+      <section>
+        <h2>{time}</h2>
+        <h3>Hours Left: {hoursToGo}</h3>
+      </section>
     </main>
   );
 };
