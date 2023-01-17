@@ -5,7 +5,10 @@ import "./App.css";
 function App() {
   return (
     <>
-      <h1>Intermittent Fasting 16 | 8</h1>
+      <h1>
+        Intermittent Fasting <span className="sixteen">16</span> |{" "}
+        <span className="eight">8</span>
+      </h1>
       <Landing />
     </>
   );
